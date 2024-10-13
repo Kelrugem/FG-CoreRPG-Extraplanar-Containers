@@ -16,9 +16,16 @@
 			<string_content_columnh name="cost" />
 
 			<label_content_column name="weight_label">
+				<anchored>
+					<top offset="15" />
+				</anchored>
 				<static textres="item_label_weight" />
 			</label_content_column>
-			<number_content_columnh name="weight" />
+			<number_content_columnh name="weight"> 
+				<anchored>
+					<top offset="15" />
+				</anchored>
+			</number_content_columnh>
 
 			<line_content_top name="divider" />
 
