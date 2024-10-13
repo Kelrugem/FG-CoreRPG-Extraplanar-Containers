@@ -5,23 +5,22 @@
 <root>
 	<windowclass name="item_main" merge="join">
 		<script file="campaign/scripts/item_main_ExtraplanarContainers.lua" />
+	</windowclass>
+	<windowclass name="item_main_standard" merge="join">
 		<sheetdata>
-			<label_content_column name="weight_label">
-				<anchored>
-					<top offset="15" /> 
-				</anchored>
-			</label_content_column>
+			<anchor_content_top />
 
-			<number_content_columnh name="weight">
-				<anchored width="52">
-					<top offset="15" />
-				</anchored>
-				<tooltip textres="item_tooltip_itemweight" />
-			</number_content_columnh>
-			<label_fieldtop name="weight_labeltop">
-				<anchored to="weight" />
-				<static textres="item_labeltop_weight" />
-			</label_fieldtop>
+			<label_content_column name="cost_label">
+				<static textres="item_label_cost" />
+			</label_content_column>
+			<string_content_columnh name="cost" />
+
+			<label_content_column name="weight_label">
+				<static textres="item_label_weight" />
+			</label_content_column>
+			<number_content_columnh name="weight" />
+
+			<line_content_top name="divider" />
 
 			<basicnumber name="extraplanarcontents">
 				<anchored to="weight" position="righthigh" offset="10,0" width="52" height="20" />
